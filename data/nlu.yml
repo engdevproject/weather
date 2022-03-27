@@ -1,0 +1,32 @@
+version: "3.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: current_temperature
+    examples: |
+      - what is the current temperature
+      - what is the current temperature in here
+      - what is the current temperature in this room
+      - what is the temperature in here
+      - what is the temperature in this room
+      - what is the temperature in this room right now
+      - what is the current temperature in [hyderabad](location)
+      - temperature in [hyderabad](location)
+      - what is the temperature in [hyderabad](location)
+      - what is the temperature in [hyderabad](location) right now
+    
