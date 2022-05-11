@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter.ttk import *
-import webview
+import webbrowser
+# import webview
 from tkinterweb import HtmlFrame  # import the HTML browser
 try:
     import tkinter as tk  # python3
@@ -9,8 +10,10 @@ except ImportError:
 
 root = tk.Tk()  # create the tkinter window
 
-webview.create_window("test", "http://localhost:5500/")
-webview.start()
+webbrowser.open("http://localhost:5500/")
+
+# webview.create_window("test", "http://localhost:5500/")
+# webview.start()
 
 # frame = HtmlFrame(root)  # create HTML browser
 
